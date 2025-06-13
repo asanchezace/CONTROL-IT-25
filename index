@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ...
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-babia-components/dist/aframe-babia-components.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+  </head>  
+  <body>
+    <a-scene>
+        <!-- Environment -->
+         <a-entity environment ></a-entity>
+        <!-- Light -->
+         <a-light type="point" intensity="1.5" position="0 7 0"></a-light>
+       
+      
+        <!-- Camera -->
+        <a-entity movement-controls="fly: true" position="0 2.3 0">
+            <a-entity camera position="0 0 0" look-controls></a-entity>
+            <a-entity cursor="rayOrigin:mouse"></a-entity>
+            <a-entity laser-controls="hand: right"></a-entity>
+        </a-entity>
+      
+
+      
+<!-- Música ambiente -->
+      <a-sound src="https://cdn.glitch.global/2e0cef17-db53-4538-a046-f63de12c38c4/ciudad_5.mp3?v=1686666242660" autoplay="true" volume="1" loop="true"></a-sound>
+      
+      
+       <a-box color="#9c9c9c" depth="12" height="1" width="12" position="0 0 0"></a-box>
+    
+     
+      <!--Paredes-->
+      <a-box color="#9c9c9c" src="https://cdn.glitch.global/2e0cef17-db53-4538-a046-f63de12c38c4/pexels-sasha-martynov-1260727.jpg?v=1686136694937" depth="0.1" height="10" width="10" position="0 1.5 -5"></a-box>
+      <a-box color="#9c9c9c" src="https://cdn.glitch.global/2e0cef17-db53-4538-a046-f63de12c38c4/pexels-sasha-martynov-1260727.jpg?v=1686136694937" depth="0.1" height="10" width="10" position="0 1.5 5"></a-box>
+      <a-box color="#9c9c9c" src="https://cdn.glitch.global/2e0cef17-db53-4538-a046-f63de12c38c4/pexels-sasha-martynov-1260727.jpg?v=1686136694937" depth="0.1" height="10" width="10" position="-4 1.5 0" rotation="0 90 0"></a-box>
+      <a-box color="#9c9c9c" src="https://cdn.glitch.global/2e0cef17-db53-4538-a046-f63de12c38c4/pexels-sasha-martynov-1260727.jpg?v=1686136694937" depth="0.1" height="10" width="10" position="4 1.5 0" rotation="0 90 0"></a-box>
+      
+     
+      <!-- Imágenes -->
+      <!--1-->
+      <a-image src="https://cdn.glitch.global/a835bd41-7b2b-4a04-8674-1599b89fd579/1.png?v=1749806107267" position ="0 2.6 -2.94" scale="2.16 3.84 1"></a-image>
+      <!--5-->
+      <a-image src="https://cdn.glitch.global/a835bd41-7b2b-4a04-8674-1599b89fd579/5.png?v=1749806303154" position ="0 2.6 2.94" scale="2.16 3.84 1" rotation="0 180 0"></a-image>
+      <!--3-->
+      <a-image src="https://cdn.glitch.global/a835bd41-7b2b-4a04-8674-1599b89fd579/3.png?v=1749806222647" position ="2.9 2.6 0" scale="2.16 3.84 1" rotation="0 -90 0"></a-image>
+      <!--7-->
+      <a-image src="https://cdn.glitch.global/a835bd41-7b2b-4a04-8674-1599b89fd579/7.png?v=1749806361156" position ="-2.9 2.6 0" scale="2.16 3.84 1" rotation="0 90 0"></a-image>
+      <!--8-->
+      <a-image src="https://cdn.glitch.global/a835bd41-7b2b-4a04-8674-1599b89fd579/8.png?v=1749806401496" position ="-2.1 2.5 -2" scale="2.16 3.84 1" rotation="0 45 0"></a-image>
+      <!--2-->
+      <a-image src="https://cdn.glitch.global/a835bd41-7b2b-4a04-8674-1599b89fd579/2.png?v=1749806184474" position ="2.1 2.5 -2" scale="2.16 3.84 1" rotation="0 -45 0"></a-image>
+      <!--6-->
+      <a-image src="https://cdn.glitch.global/a835bd41-7b2b-4a04-8674-1599b89fd579/6.png?v=1749806330013" position ="-2.1 2.5 2" scale="2.16 3.84 1" rotation="0 135 0"></a-image>
+      <!--4-->
+      <a-image src="https://cdn.glitch.global/a835bd41-7b2b-4a04-8674-1599b89fd579/4.png?v=1749806262705" position ="2.1 2.5 2" scale="2.16 3.84 1" rotation="0 -135 0"></a-image>
+   
+    </a-scene>
+  </body>
+</html>
